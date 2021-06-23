@@ -7,7 +7,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>表白</title>
     <style>
         *{
             margin: 0;
@@ -50,7 +50,7 @@
         }
     </style>
 </head>
-<body style="background-image: url(bbqbj.jpg);background-size:1000px;">
+<body style="background-image: url(../imgs/bbqbj.jpg);background-size:1000px;">
 <div>
     <h3>心动不如行动，表白你爱的ta！</h3>
     <form action="./bbadd.php" method="post" enctype="multipart/form-data">
@@ -60,7 +60,7 @@
         你的电话：<input type="text" name="tel" class="name" placeholder="请输入你的电话号码">
         ta的照片：<input type="file" name="pic" id="pic" style="width: 170px">
         <input type="submit" class="submit" value="提交">
-        <a href="qiang.php" class="submit" style="display: inline-block;color: black;background-color:white;text-decoration: none;line-height: 30px">取消</a>
+        <a href="../index.php" class="submit" style="display: inline-block;color: black;background-color:white;text-decoration: none;line-height: 30px">取消</a>
     </form>
 </div>
 </body>

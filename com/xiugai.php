@@ -1,12 +1,12 @@
 <?php
-$id=$_GET['id'];
-$link=mysqli_connect('localhost','root','root','bbq') or
-die('连接失败'.mysqli_connect_error());
-mysqli_set_charset($link,'utf8');
-$sql="select * from qiang where id={$id}";
-$res=mysqli_query($link,$sql);
-$arr=mysqli_fetch_assoc($res);
-mysqli_close($link);                                                                     
+$id = $_GET['id'];
+$link = mysqli_connect('localhost', 'root', 'root', 'bbq') or
+die('连接失败' . mysqli_connect_error());
+mysqli_set_charset($link, 'utf8');
+$sql = "select * from qiang where id={$id}";
+$res = mysqli_query($link, $sql);
+$arr = mysqli_fetch_assoc($res);
+mysqli_close($link);
 ?>
 <!doctype html>
 <html lang="en">
@@ -15,7 +15,7 @@ mysqli_close($link);
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>修改表白信息</title>
     <style>
         *{
             margin: 0;
@@ -58,7 +58,7 @@ mysqli_close($link);
         }
     </style>
 </head>
-<body style="background-image: url(bbqbj.jpg)">
+<body style="background-image: url(../imgs/bbqbj.jpg)">
 <div>
     <h3>表白信息修改</h3>
     <form action="xiugai2.php" method="post">
