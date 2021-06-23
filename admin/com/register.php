@@ -5,9 +5,9 @@
 <head>
     <meta charset="UTF-8">
     <title>注册</title>
-    <link rel="stylesheet" type="text/css" href="loginRegister.css" />
+    <link rel="stylesheet" type="text/css" href="../css/loginRegister.css" />
 </head>
-<body style="background-image:url(../bbqbj.jpg);">
+<body style="background-image:url(../../imgs/bbqbj.jpg);">
 <div class="box" style="height: 290px">
     <!--标题-->
     <div class="title">

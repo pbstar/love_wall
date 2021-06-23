@@ -5,15 +5,15 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>登录</title>
-		<link rel="stylesheet" type="text/css" href="loginRegister.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/loginRegister.css"/>
 	</head>
-	<body style="background-image:url(../bbqbj.jpg);">
+	<body style="background-image:url(../../imgs/bbqbj.jpg);">
 		<div class="box">
 			<div class="title">
 				<span class="login colorRed"><a href="" style="color: white">登录</a></span>
-				<span class="register"><a href="register.php" style="color: red">注册</a></span>
+				<span class="register"><a href="./register.php" style="color: red">注册</a></span>
 			</div>
-            <form action="login2.php" method="post" class="login">
+            <form action="./login2.php" method="post" class="login">
                 <ul>
                     <li>
                         <label for="account">账&nbsp;&nbsp;&nbsp;&nbsp;号</label>
@@ -47,5 +47,5 @@
 	</body>
 </html>
 <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
-<script src="login.js" type="text/javascript" charset="utf-8"></script>
-<script src="register.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/login.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/register.js" type="text/javascript" charset="utf-8"></script>

@@ -1,13 +1,13 @@
 <?php
-$link=@mysqli_connect('localhost','root','root','bbq') or
-die('连接失败：'.mysqli_connect_error());
-mysqli_set_charset($link,'utf8');
-$sql="select * from user";
-$res=mysqli_query($link,$sql);
-if (!$res){
+$link = @mysqli_connect('localhost', 'root', 'root', 'bbq') or
+die('连接失败：' . mysqli_connect_error());
+mysqli_set_charset($link, 'utf8');
+$sql = "select * from user";
+$res = mysqli_query($link, $sql);
+if (!$res) {
     die('查询失败');
 }
-$news=mysqli_fetch_all($res,MYSQLI_ASSOC);
+$news = mysqli_fetch_all($res, MYSQLI_ASSOC);
 mysqli_close($link);
 ?>
 <!doctype html>
@@ -17,8 +17,8 @@ mysqli_close($link);
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="admin.css"/>
+    <title>表白墙管理后台</title>
+    <link rel="stylesheet" type="text/css" href="../css/admin.css"/>
     <style>
         .but2 {
             position: absolute;
@@ -84,28 +84,28 @@ mysqli_close($link);
                     </tr>
                 </thead>
                 <tbody>
-                    <?php foreach ($news as $key=>$value){ ?>
+                    <?php foreach ($news as $key => $value) {?>
                         <tr>
-                            <td><?php echo $value['id']?></td>
-                            <td><?php echo $value['name']?></td>
-                            <td><?php echo $value['password']?></td>
+                            <td><?php echo $value['id'] ?></td>
+                            <td><?php echo $value['name'] ?></td>
+                            <td><?php echo $value['password'] ?></td>
                             <td>
-                                <a class="gs" href="usersc.php?id=<?php echo $value['id']?>">删除</a>
-                                <a class="gs" href="userxg.php?id=<?php echo $value['id']?>">修改</a>
+                                <a class="gs" href="./usersc.php?id=<?php echo $value['id'] ?>">删除</a>
+                                <a class="gs" href="./userxg.php?id=<?php echo $value['id'] ?>">修改</a>
                             </td>
                         </tr>
-                    <?php } ?>
+                    <?php }?>
                 </tbody>
             </table>
         </div>
     </form>
     <div class="left">
         <ul>
-            <a href="admin.php"><li>表白信息-></li></a>
+            <a href="../admin.php"><li>表白信息-></li></a>
             <li>人员管理-></li>
         </ul>
     </div>
 </div>
-<script src="./admin.js" charset="utf-8"></script>
+<script src="../js/admin.js" charset="utf-8"></script>
 </body>
 </html>

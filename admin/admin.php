@@ -1,13 +1,13 @@
 <?php
-$link=@mysqli_connect('localhost','root','root','bbq') or
-die('连接失败：'.mysqli_connect_error());
-mysqli_set_charset($link,'utf8');
-$sql="select * from qiang";
-$res=mysqli_query($link,$sql);
-if (!$res){
+$link = @mysqli_connect('localhost', 'root', 'root', 'bbq') or
+die('连接失败：' . mysqli_connect_error());
+mysqli_set_charset($link, 'utf8');
+$sql = "select * from qiang";
+$res = mysqli_query($link, $sql);
+if (!$res) {
     die('查询失败');
 }
-$news=mysqli_fetch_all($res,MYSQLI_ASSOC);
+$news = mysqli_fetch_all($res, MYSQLI_ASSOC);
 mysqli_close($link);
 ?>
 <!doctype html>
@@ -17,8 +17,8 @@ mysqli_close($link);
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="admin.css"/>
+    <title>表白墙管理后台</title>
+    <link rel="stylesheet" type="text/css" href="./css/admin.css"/>
     <style>
         .but1 {
             position: absolute;
@@ -61,7 +61,7 @@ mysqli_close($link);
     </div>
 </div>
 <div class="under">
-    <form action="./plsc.php" method="post" style="display: inline-block;float: right">
+    <form action="./com/plsc.php" method="post" style="display: inline-block;float: right">
         <div class="right">
             <span class="topspan">表白信息展示表</span>
             <span class="but1">反向选择</span>
@@ -79,19 +79,19 @@ mysqli_close($link);
                     </tr>
                 </thead>
                 <tbody>
-                    <?php foreach ($news as $key=>$value){ ?>
+                    <?php foreach ($news as $key => $value) {?>
                         <tr>
-                            <td><input type="checkbox" name="checkbox[]" value="<?php echo $value['id']?>"/></td>
-                            <td><?php echo $value['id']?></td>
-                            <td><?php echo $value['name1']?></td>
-                            <td><?php echo $value['name2']?></td>
-                            <td><?php echo $value['tel']?></td>
-                            <td><?php echo date('Y-m-d H:i',$value['btime'])?></td>
+                            <td><input type="checkbox" name="checkbox[]" value="<?php echo $value['id'] ?>"/></td>
+                            <td><?php echo $value['id'] ?></td>
+                            <td><?php echo $value['name1'] ?></td>
+                            <td><?php echo $value['name2'] ?></td>
+                            <td><?php echo $value['tel'] ?></td>
+                            <td><?php echo date('Y-m-d H:i', $value['btime']) ?></td>
                             <td>
-                                <a class="gs" href="shanchu.php?id=<?php echo $value['id']?>">删除</a>
+                                <a class="gs" href="./com/shanchu.php?id=<?php echo $value['id'] ?>">删除</a>
                             </td>
                         </tr>
-                    <?php } ?>
+                    <?php }?>
                 </tbody>
             </table>
         </div>
@@ -99,10 +99,10 @@ mysqli_close($link);
     <div class="left">
         <ul>
             <li>表白信息-></li>
-            <a href="admin2.php"><li>人员管理-></li></a>
+            <a href="./com/admin2.php"><li>人员管理-></li></a>
         </ul>
     </div>
 </div>
-<script src="./admin.js" charset="utf-8"></script>
+<script src="./js/admin.js" charset="utf-8"></script>
 </body>
 </html>

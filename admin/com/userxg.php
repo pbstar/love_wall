@@ -1,11 +1,11 @@
 <?php
-$id=$_GET['id'];
-$link=mysqli_connect('localhost','root','root','bbq') or
-die('连接失败'.mysqli_connect_error());
-mysqli_set_charset($link,'utf8');
-$sql="select * from user where id={$id}";
-$res=mysqli_query($link,$sql);
-$arr=mysqli_fetch_assoc($res);
+$id = $_GET['id'];
+$link = mysqli_connect('localhost', 'root', 'root', 'bbq') or
+die('连接失败' . mysqli_connect_error());
+mysqli_set_charset($link, 'utf8');
+$sql = "select * from user where id={$id}";
+$res = mysqli_query($link, $sql);
+$arr = mysqli_fetch_assoc($res);
 mysqli_close($link);
 ?>
 <?php
@@ -15,9 +15,9 @@ mysqli_close($link);
 <head>
     <meta charset="UTF-8">
     <title>注册</title>
-    <link rel="stylesheet" type="text/css" href="loginRegister.css" />
+    <link rel="stylesheet" type="text/css" href="../css/loginRegister.css" />
 </head>
-<body style="background-image:url(../bbqbj.jpg);">
+<body style="background-image:url(../../imgs/bbqbj.jpg);">
 <div class="box" style="height: 240px">
     <!--标题-->
     <div class="title">
