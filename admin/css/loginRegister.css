@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ul,li {
+    display: block;
+    width: 300px !important;
+    list-style: none;
+    line-height: 44px;
+    margin: 0 auto;
+}
+input {
+    background-color: #fff;
+    outline: none;
+    color:#999;
+}
+.colorRed{
+    color: red !important;
+}
+.box{
+    border: 2px solid white;
+    padding-top: 20px;
+    /*padding-left: 30px;*/
+    background-color:pink;
+    width: 380px !important;
+    height: 320px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    text-align: center;
+}
+.title {
+    height: 45px;
+    line-height: 45px;
+}
+.title a{
+    text-decoration: none;
+}
+.title .login, .title .register{
+    padding: 10px 0;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+.title span:hover{
+    color: deeppink;
+}
+.submit input {
+    display: inline-block;
+    width: 250px;
+    background-color: rgb(255, 109, 11);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    height: 40px;
+    line-height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px auto;
+}
+.submit input:hover{
+    background-color: rgb(220, 109, 11);
+}
+.box li label {
+    width: 68px;
+    height: 50px;
+    /*float: left;*/
+    line-height: 50px;
+    /*text-align: right;*/
+    padding-right: 20px;
+}
+.box li input{
+    padding: 5px 0;
+    font-size: 16px;
+    width: 200px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #dddddd;
+    text-indent: 0.5em;
+    /*float: left;*/
+    border-radius: 5px;
+}
+#kanbuq{
+    text-decoration: none;
+    font-size: x-small;
+    float: right;
+}
+#pic{
+    float: right;
+}

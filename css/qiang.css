@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+.top{
+    width: 100%;
+    height: 50px;
+}
+.topbox{
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    line-height: 50px;
+}
+.topspan{
+    float: right;
+}
+.topa{
+    float: right;
+}
+.mid{
+    height: 250px;
+    width: 1000px;
+    margin: 0 auto;
+    line-height: 200px;
+    text-align: center;
+}
+.but{
+    width: 1000px;
+    margin: 0 auto;
+    /*background-color: green;*/
+}
+.bb{
+    border: 2px solid white;
+    width: 998px;
+    margin: 10px auto 0;
+    background-color: pink;
+
+}
+.bbtop{
+    width: 1000px;
+    height: 30px;
+    /*background-color: yellow;*/
+    line-height: 30px;
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+.bbmid{
+    width: 1000px;
+    /*background-color: yellow;*/
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+.bbbut{
+    width: 1000px;
+    height: 30px;
+    /*background-color: yellow;*/
+    line-height: 30px;
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+#name2{
+    float: right;
+}
+img{
+    width: 300px;
+}
+#name{
+    display: inline-block;
+    width: 250px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    height: 30px;
+    line-height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#sub{
+    display: inline-block;
+    width: 130px;
+    background-color: rgb(255, 109, 11);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    height: 30px;
+    line-height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

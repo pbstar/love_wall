@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+.top{
+    width: 100%;
+    height: 40px;
+    background-color: #999999;
+    color: aqua;
+}
+.topbox{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    line-height: 40px;
+}
+.under{
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+
+}
+.left{
+    height: 100%;
+    width: 115px;
+    background-color: #ff7200;
+    color: white;
+    overflow: hidden;
+}
+.left ul{
+    width: 100px;
+}
+.left li{
+    height: 35px;
+    line-height: 35px;
+    /*padding-top: 10px;*/
+    padding-left: 15px;
+    margin-top: 2px;
+    width: 100px;
+    background-color: rgba(0,0,0,.2);
+    display: block;
+}
+.right{
+    width: 1085px;
+    height: 700px;
+    background-color: #eeeeee;
+    float: right;
+    position: relative;
+}
+/*表格*/
+table {
+    width: 90%;
+    margin: 60px auto 0;
+    text-align: center;
+    border-collapse: collapse;
+}
+th,
+td {
+    border: 1px solid #aaa;
+    padding: 10px;
+    background-color: #ffeeee;
+}
+.tr1 th{
+    background-color: rgb(142, 223, 146) !important;
+}
+.but1 {
+     position: absolute;
+     top: 17px;
+     left: 900px;
+     background-color: #ff7200;
+     font-size: 16px;
+ }
+
+.but2 {
+    background-color: #ff7200;
+    font-size: 16px;
+    position: absolute;
+    top: 17px;
+    left: 820px;
+}
+.topspan{
+    position: absolute;
+    top: 15px;
+    left: 100px;
+    font-size: large;
+}
