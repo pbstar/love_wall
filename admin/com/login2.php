@@ -15,10 +15,7 @@ if ($code != $vcode) {
     die();
 }
 //连库操作
-$link = mysqli_connect('localhost', 'root', 'root', 'bbq') or
-die('连接失败' . mysqli_connect_error());
-//设置字符集
-mysqli_set_charset($link, 'utf8');
+include "../../db/connectdb.php";
 //执行sql语句
 $sql = "select * from user where name='$account' and password='$pass'";
 $res = mysqli_query($link, $sql);

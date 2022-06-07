@@ -1,9 +1,7 @@
 <?php
 $name = $_POST['name'];
 $password = $_POST['password'];
-$link = @mysqli_connect('localhost', 'root', 'root', 'bbq') or
-die('连接失败' . mysqli_connect_error());
-mysqli_set_charset($link, 'utf8');
+include "../../db/connectdb.php";
 $sql = "insert into user (name,password) values ('{$name}','{$password}')";
 $res = mysqli_query($link, $sql);
 if ($res) {
