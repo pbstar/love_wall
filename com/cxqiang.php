@@ -43,7 +43,7 @@ mysqli_close($link);
                         </div>
                         <div class="bbmid" style="color: #ff7200">
                             &nbsp;&nbsp;&nbsp;&nbsp;<?php echo $value['content'] ?><br>
-                            <img src="./uploads/<?php echo $value['photo'] ?>" alt=""><br>
+                            <img src="../uploads/<?php echo $value['photo'] ?>" alt=""><br>
                             记得联系我呀，tel：<?php echo $value['tel'] ?>
                         </div>
                         <div class="bbbut">
